@@ -1,20 +1,19 @@
-import React from 'react'
-import Header from './Header'
-import MainRoutes from './MainRoutes'
+import React from "react";
+import { BrowserRouter, HashRouter } from "react-router-dom";
+import Header from "./Header";
+import MainRoutes from "./MainRoutes";
 
 function HW5() {
-    return (
-        <div>
-            {/*в gh-pages лучше работает HashRouter*/}
-            {/*<HashRouter>*/}
+  return (
+    <div>
+      {/*в gh-pages лучше работает HashRouter*/}
+      <BrowserRouter>
+        <Header />
 
-            <Header/>
-
-            <MainRoutes/>
-
-            {/*</HashRouter>*/}
-        </div>
-    )
+        <MainRoutes />
+      </BrowserRouter>
+    </div>
+  );
 }
 
-export default HW5
+export default HW5;

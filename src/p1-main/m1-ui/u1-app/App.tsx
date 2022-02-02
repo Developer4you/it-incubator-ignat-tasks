@@ -6,7 +6,6 @@ function App() {
   return (
     <div className={s.App}>
       <div className={s.wrap}>
-        <h2>React homeworks:</h2>
         <HW5 />
       </div>
     </div>
