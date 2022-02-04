@@ -1,14 +1,29 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import style from "./Header.module.css";
+import st from "./Header.module.css";
 
 function Header() {
   return (
-    <div className={style.nav_wrap}>
-      <div className={style.nav}>
-        <NavLink to="/pre-junior">PRE_JUNIOR</NavLink>
-        <NavLink to="/junior">JUNIOR</NavLink>
-        <NavLink to="/junior-plus">JUNIOR_PLUS</NavLink>
+    <div className={st.nav_wrap}>
+      <div className={st.nav}>
+        <NavLink
+          to="/pre-junior"
+          className={({ isActive }) => (isActive ? st.activeLink : st.link)}
+        >
+          PRE_JUNIOR
+        </NavLink>
+        <NavLink
+          to="/junior"
+          className={({ isActive }) => (isActive ? st.activeLink : st.link)}
+        >
+          JUNIOR
+        </NavLink>
+        <NavLink
+          to="/junior-plus"
+          className={({ isActive }) => (isActive ? st.activeLink : st.link)}
+        >
+          JUNIOR_PLUS
+        </NavLink>
       </div>
     </div>
   );
