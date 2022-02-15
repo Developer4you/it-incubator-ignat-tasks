@@ -37,7 +37,8 @@ function HW8() {
   return (
     <div>
       <hr />
-        <h3>Homeworks 8</h3>
+        <h3>Homeworks 1</h3>
+        {finalPeople}
       <div>
         <SuperButton onClick={sortUp}>sort up</SuperButton>
       </div>
