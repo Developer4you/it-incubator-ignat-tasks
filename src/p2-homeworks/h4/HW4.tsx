@@ -21,9 +21,9 @@ function HW4() {
     setChecked(e.currentTarget.checked);
   };
   return (
-    <div>
+    <div className={s.hw4}>
       <hr />
-      homeworks 4
+      <h3>Homeworks 4</h3>
       <div className={s.column}>
         <SuperInputText
           value={text}

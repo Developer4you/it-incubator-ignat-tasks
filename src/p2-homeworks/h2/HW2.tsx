@@ -37,7 +37,7 @@ function HW2() {
     const deleteAffairCallback = (_id: number) => setAffairs(deleteAffair(affairs, _id))
 
     return (
-        <div className={s.hw2}>
+        <div>
             <hr/>
             <h3>Homeworks 2</h3>
 

@@ -16,7 +16,7 @@ function HW6() {
   return (
     <div>
       <hr />
-      homeworks 6
+        <h3>Homeworks 6</h3>
       <div>
         <SuperEditableSpan
           value={value}

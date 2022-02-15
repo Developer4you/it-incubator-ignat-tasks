@@ -1,8 +1,10 @@
 .App {
+    max-width: 1300px;
+    margin: 0 auto;
     color:silver;
 }
 
-.wrap {
-    max-width: 700px;
-    margin: 0 auto;
+.hw {
+    min-width: 430px;
 }
+

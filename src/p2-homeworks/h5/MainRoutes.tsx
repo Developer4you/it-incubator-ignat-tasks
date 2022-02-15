@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Routes, Navigate } from "react-router";
-import Error404 from "./pages/Error404";
-import Junior from "./pages/Junior";
-import JuniorPlus from "./pages/JuniorPlus";
-import PreJunior from "./pages/PreJunior";
+import Error404 from "../pages/Error404";
+import Junior from "../pages/Junior";
+import JuniorPlus from "../pages/JuniorPlus";
+import PreJunior from "../pages/PreJunior";
 
 export const PATH = {
   PRE_JUNIOR: "/pre-junior",
