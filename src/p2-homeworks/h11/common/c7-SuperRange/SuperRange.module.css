@@ -1,3 +1,19 @@
 .range {
+    -webkit-appearance: none;
+    /* установите свою высоту*/
+    padding: 0;
+    /* стили ползунка */
+    height: 5px;
+    width: 100%;
+    background-color:gray;
+}
 
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    box-sizing: content-box;
+    /* стили бегунка */
+    height: 20px;
+    width: 20px;
+    background-color: #2d7777;
+    border-radius: 10px;
 }
