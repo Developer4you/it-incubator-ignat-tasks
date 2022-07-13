@@ -14,7 +14,6 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
         ...restProps
     }
 ) => {
-    // сделать самому, можно подключать библиотеки
 
     const onChangeCallbackForUpperInput = (e: ChangeEvent<HTMLInputElement>) => {
         const value1 = value ? value[0] : 0
