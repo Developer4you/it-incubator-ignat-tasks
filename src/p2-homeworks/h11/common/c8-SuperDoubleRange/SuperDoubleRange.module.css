@@ -3,12 +3,25 @@
     pointer-events: none;
 }
 
+.values {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lowerValue {
+}
+
+.upperValue {
+}
+
 .range {
     -webkit-appearance: none;
     position: absolute;
+    left: 30px;
+    top: 10px;
     /* стили ползунка */
     height: 5px;
-    width: 100%;
+    width: 80%;
     display: block;
     padding: 0;
     margin: 0;
@@ -23,9 +36,18 @@
     width: 20px;
     background-color: #2d7777;
     border-radius: 10px;
+    transition: 0.5s;
 }
 
-.range::-webkit-slider-runnable-track{
+.range::-webkit-slider-thumb:hover {
+    background-color: #61dafb;
+}
+
+.range::-webkit-slider-thumb:active {
+    background-color: white;
+}
+
+.range::-webkit-slider-runnable-track {
 
 }
 
@@ -35,4 +57,5 @@
 
 .lowerInputClassName {
     background-color: gray;
+    border-radius: 3px;
 }

@@ -17,17 +17,21 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     // сделать самому, можно подключать библиотеки
 
     const onChangeCallbackForUpperInput = (e: ChangeEvent<HTMLInputElement>) => {
-        const value1 = value ? value[0]:0
+        const value1 = value ? value[0] : 0
         onChangeRange && onChangeRange([value1, +e.currentTarget.value])
     }
     const onChangeCallbackForLowerInput = (e: ChangeEvent<HTMLInputElement>) => {
-        const value2 = value ? value[1]:0
+        const value2 = value ? value[1] : 0
         onChangeRange && onChangeRange([+e.currentTarget.value, value2])
     }
     const finalRangeClassName1 = `${s.range} ${s.upperInputClassName}`
     const finalRangeClassName2 = `${s.range} ${s.lowerInputClassName}`
     return (
         <div className={s.wrap}>
+            <div className={s.values}>
+                <span className={s.lowerValue}>{value && value[0]}</span>
+                <span className={s.upperValue}>{value && value[1]}</span>
+            </div>
             <input
                 type={'range'}
                 onChange={onChangeCallbackForUpperInput}
@@ -42,6 +46,7 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
                 value={value && value[0]}
                 {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
             />
+
         </div>
     )
 }

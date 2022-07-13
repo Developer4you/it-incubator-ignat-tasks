@@ -1,11 +1,19 @@
+.wrap {
+    position: relative;
+}
+
 .range {
     -webkit-appearance: none;
     /* установите свою высоту*/
     padding: 0;
+    position: absolute;
+    left: 30px;
+    top: 8px;
     /* стили ползунка */
     height: 5px;
-    width: 100%;
-    background-color:gray;
+    width: 80%;
+    background-color: gray;
+    border-radius: 3px;
 }
 
 .range::-webkit-slider-thumb {
@@ -16,4 +24,13 @@
     width: 20px;
     background-color: #2d7777;
     border-radius: 10px;
+    transition: 0.5s;
+}
+
+.range::-webkit-slider-thumb:hover {
+    background-color: #61dafb;
+}
+
+.range::-webkit-slider-thumb:active {
+    background-color: white;
 }
